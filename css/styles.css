@@ -1,0 +1,136 @@
+.titleStyle {
+    text-align: center; 
+    background-color: rgb(169, 0, 195);
+    border: solid black;
+    padding: 5px;
+}
+
+.logo {
+    position: fixed;
+    top: calc(11vh - 6.25vw);
+    left: 53.75vw;
+    width: 12.5vw;
+    height: auto;
+    z-index: 2;
+    display: none;
+}
+
+.addButton {
+    background-color: red;
+    padding: 5px;
+    color: black;
+    font-size: 2vw;
+}
+
+.addButton:hover {
+    background-color: rgb(163, 0, 0);
+}
+
+.plusButton {
+    background-color: green;
+    padding: 5px;
+    color: black;
+    font-size: 1vw;
+}
+
+.plusButton:hover {
+    background-color: rgb(0, 75, 0);
+}
+
+.orderButton {
+    background-color: rgb(0, 192, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    padding-top:  4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: fixed;
+    right: 6.9vw;
+    bottom: 1.5vh;
+}
+
+.orderButton:hover {
+    background-color: rgb(0, 99, 0);
+}
+
+.confirmButton {
+    background-color: rgb(0, 192, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    z-index: 2; 
+    display: none; 
+    height: 25vh;
+    position: fixed;
+    top: 37.5vh;
+    right: 5vw;
+    
+}
+
+.confirmButton:hover {
+    background-color: rgb(0, 99, 0);
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.menuItem {
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(0, 169, 146);
+}
+
+.wideLine {
+    height: 5px;
+    background-color: black;
+    border: none;
+}
+
+.blur {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+.confirmBox {
+    position: fixed;
+    top: 10vh;
+    left: 10vw; 
+    width: 50vw;
+    box-sizing: border-box;
+    background-color: white;
+    border: solid black;
+    padding: 10px;
+    font-size: 32px;
+    z-index: 2;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: none;
+}
+
+.currContainer {
+    background-color: rgb(255, 101, 242);
+    border-style: solid;
+    width: 35vw;
+    margin: 0 auto 40px;
+    left: 32.5vw;
+    box-sizing: border-box;
+    font-size: 36px;
+}
+
+.spacedRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-image: url('../../images/supernova.jpg');
+    background-size: cover;
+}

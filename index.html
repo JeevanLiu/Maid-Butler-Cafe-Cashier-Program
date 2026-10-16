@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAID BUTLER STOCK</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="titleStyle">Maid & Butler Cafe - Menu Sheet</h1>
+
+    <div class="blur" id="blur" style="z-index: -1;"></div>
+
+    <!-- The menu (Dynamically updates based on app.js) -->
+    <div id="drinkContainer" class="menuContainer">
+        <!-- SECTION THAT GETS RESET EVERY RELOAD with drinks! -->
+    </div>
+    <div id="foodContainer" class="menuContainer">
+        <!-- SECTION THAT GETS RESET EVERY RELOAD with food! -->
+    </div>
+
+    <!-- Silly line to separate the menu from the current order section -->
+    <br>
+    <hr class="wideLine">
+    <br>
+
+
+    <!-- The orders -->
+
+    <!-- Button that displays your -->
+    <button id="orderButton" onclick="order()" class="orderButton"> CHUDDDIE </button>
+
+
+    <!-- Section of the screen displaying the current order -->
+    <div class="currContainer">
+        <ul id="currDrinks"><b>Drinks:</b></ul>
+        <ul id="currFood"><b>Foods:</b></ul>
+    </div>
+
+    <!-- Confirm order screen -->
+    <div class="confirmBox" id="confirmCont">
+        <hr style="border: none; border-top: 3px dotted; width: 100%;">
+        <div class="spacedRow">
+            <span>Total:</span>
+            <span id="totalPrice"></span>
+        </div>
+        <hr>
+        <br>
+        <label for="tableNum">Enter the table number: </label>
+        <input type="number" id="tableNum" style="font-size: 36px; width: 58px;" max="20" min="1">
+        <br>
+        <br>
+        <button class="confirmButton" onclick="orderToSpreadsheet()" id="sendOrder">Confirm and<br>Send Order</button>
+        <button class="addButton" id="cancelOrder" style="z-index: 2; display: none;" onclick="cancel()"> Cancel Order </button>
+    </div>
+    <img src="images/CQUADLogoCIRCLE.png" alt="Logo" class="logo" id="logo">
+
+    <script src="js/app.js"></script>
+</body>
+</html>
