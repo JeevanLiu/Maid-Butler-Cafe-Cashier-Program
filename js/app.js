@@ -157,7 +157,6 @@ function reload() {
             <button class="addButton" id="${i}" onclick="remStock(this.id, true)"> Add to order </button>
             </div>`
             // Removed             <button class="plusButton" id="${i}" onclick="oopsReAdd(this.id, true, true)"> (add stock) </button>
-
         }
         else {
             DC.innerHTML += `<div class="menuItem">
@@ -260,6 +259,10 @@ function cancel() {
 
     // Reset display
     closeOrder()
+    
+    // Current menu on screen reset
+    currDrinks.innerHTML = `Drinks:`;
+    currFood.innerHTML = `Foods:`;
 
     // Reloads to update stock count
     reload()
@@ -340,10 +343,6 @@ function closeOrder() {
     orderNumElement.remove();
     dList.remove();
     fList.remove();
-
-    // Current menu on screen reset
-    currDrinks.innerHTML = `Drinks:`;
-    currFood.innerHTML = `Foods:`;
 }
 
 // FINAL CHANGES
